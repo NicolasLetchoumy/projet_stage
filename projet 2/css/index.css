@@ -1,0 +1,194 @@
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient( to bottom, orange, yellow);
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 12%;
+    border: solid black 2px;
+    background:linear-gradient(to right, rebeccapurple,pink);
+}
+
+main{
+    width: 100%;
+}
+
+footer{
+    position: static;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+    border-top: solid black 2px;
+}
+
+
+
+/* page accueil */
+
+.titre{
+    text-align: center;
+    font-size: 55px;
+}
+
+.modeleFormulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.modeleFormulaire img{
+    width: 8%;
+    margin-top: 1%;
+}
+
+.centrage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation{
+    text-align: center;
+    border: solid black 1px;
+    text-align: center;
+    width: 40%;
+    padding: 1.5%;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+#btnAccueil{
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 20px;
+    width: 25%;
+    padding: 1%;
+    margin: 2%;
+    
+}
+
+#btnAccueil:hover{
+    box-shadow: 3px 3px 8px 8px blue;
+    opacity: 0.9;
+    color: yellow;
+}
+/* footer de la page */
+
+.logoReseaux{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logoReseaux a{
+    margin: 2%;
+    width: 5%;
+}
+
+.logoReseaux img{
+    width: 75%;
+}
+
+.logoReseaux a:hover{
+    background-color: green;
+}
+
+.copyright{
+    text-align: right;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+/* resultat Popup formulaire */
+
+
+#overlay, #overlay2{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+#formulairePartie1, #formulairePartie2{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    height: 10%;
+    display: none;
+    border: solid black 2px;
+    box-shadow: 8px 8px 12px 12px rebeccapurple;
+    background-color: white;
+    padding: 10%;
+    width: 60%;
+    opacity: 1;
+
+}
+
+
+#formulairePartie1 h3, .titreDuFormulaire h3{
+    text-align: center;
+}
+
+.fermerPopup, .fermerPopup2{
+    display: inline-block;
+    position: fixed;
+    font-size: 40px;
+    top: 22%;
+    right: 22%;
+    background: none;
+    border: none;
+}
+
+/* page réalisation */
+
+#btnPartie1{
+    margin-left: 48%;
+}
+#btnPartie1:hover{
+    background-color: red;
+    box-shadow: 2px 2px 3px 3px blue;
+}
+
+.titreDuFormulaire, #formulaireSelect1{
+    display: none;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#terminerFormulaire{
+    display: none;
+    margin-left: 45%;
+}
+
+#toutesQuestion{
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+}
+
+#toutesQuestion h5{
+    margin: 2%;
+    width: 100%;
+}
+
+.box input, .box label{
+    margin-top: 10%;
+}
+
+#formulaireSelect1{
+    margin-bottom: 2%;
+}
