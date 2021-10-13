@@ -1,0 +1,236 @@
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient( to bottom, orange, yellow);
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 12%;
+    border: solid black 2px;
+    background:linear-gradient(to right, rebeccapurple,pink);
+}
+
+main{
+    width: 100%;
+    height: 80%;
+}
+
+footer{
+    width: 100%;
+    height: 2%;
+    border-top: solid black 2px;
+}
+
+
+
+/* page accueil */
+
+.titre{
+    text-align: center;
+    font-size: 55px;
+}
+
+/* main de la page */
+
+.modeleFormulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.modeleFormulaire img{
+    width: 8%;
+    margin-top: 1%;
+}
+
+.centrage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation{
+    text-align: center;
+    border: solid black 1px;
+    text-align: center;
+    width: 40%;
+    padding: 1.5%;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+#btnAccueil{
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 20px;
+    width: 25%;
+    padding: 1%;
+    margin: 2%;
+    
+}
+
+#btnAccueil:hover{
+    box-shadow: 3px 3px 8px 8px blue;
+    opacity: 0.9;
+    color: yellow;
+}
+/* footer de la page */
+
+.logoReseaux{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logoReseaux a{
+    margin: 2%;
+    width: 5%;
+}
+
+.logoReseaux img{
+    width: 75%;
+}
+
+.fab fa-facebook{
+    width: 100%;
+    margin: 0px;
+}
+
+.logoReseaux a:hover{
+    background-color: green;
+}
+
+.copyright{
+    text-align: right;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+/* page modèle de formulaire */
+
+.titreModeleFormulaire{
+    text-align: center;
+    font-size: 30px;
+}
+
+.choixFormulaire{
+    width: 100%;
+}
+
+.choixFormulaire ul li{
+    list-style-type: none;
+}
+
+.choixFormulaire ul li img{
+    width: 11%;
+    margin: 2%;
+}
+
+/* page réalisation */
+
+.formulaireChoisie{
+    width: 50%;
+    padding: 5%;
+    margin: 2%;
+    border: solid black 2px;
+    background-color: blanchedalmond;
+}
+
+
+
+/* decoration formulaire */
+
+#mesQuestion{
+    width: 40%;
+    margin-left: 25%;
+}
+
+.partie1{
+    width: 90%;
+    padding: 15%;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#mesQuestion2, #mesQuestion3{
+    width: 70%;
+    display: none;
+}
+
+.partie2, .partie3{
+    width: 48%;
+    border: solid black 1px;
+    padding: 2%;
+    margin-top: 2%;
+    
+}
+
+.partie2 svg, .partie3 svg{
+    margin-left: 35%;
+}
+
+.partie2 svg:hover, .partie3 svg:hover, .partie1 svg:hover{
+    background-color: red;
+    box-shadow: 2px 2px 3px 3px blue;
+}
+
+.formulaireDroite{
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#overlay2{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+#formulairePartie1 input{
+    margin: 5%;
+    margin-left: 42%;
+}
+
+
+/* resultat Popup formulaire */
+
+#formulairePartie1{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    height: 10%;
+    display: none;
+    border: solid black 2px;
+    box-shadow: 8px 8px 12px 12px rebeccapurple;
+    background-color: white;
+    padding: 10%;
+    width: 60%;
+    opacity: 1;
+}
+
+
+.fermerPopup{
+    display: inline-block;
+    position: fixed;
+    font-size: 40px;
+    top: 22%;
+    right: 22%;
+    background: none;
+    border: none;
+}
