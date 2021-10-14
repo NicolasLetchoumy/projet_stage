@@ -1,3 +1,4 @@
+<!-- toutes les question rentrer par l'utilisateur question utilisateur -->
 <div id="overlay2">
                 <div id="formulairePartie2">
                 <input type="button" name="" class="fermerPopup2" value="X">
