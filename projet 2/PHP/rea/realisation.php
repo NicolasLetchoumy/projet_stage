@@ -25,46 +25,26 @@
             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
         </svg>
         <form action="" method="post">   
-            <!-- titre du formulaire-->
-            <div id="overlay">
-                <div id="formulairePartie1">
-                <input type="button" name="" class="fermerPopup" value="X">
-                    <h3>entrez le titre du formulaire</h3>
-                    <div class="input-group input-group-lg">
-                            <input type="text" name="titreFormulaire" class="form-control" id="titreFormulaire" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" value="" placeholder="Titre">
-                            <input type="submit" name="validerFormulaire" class="btn btn-primary"  id="validerFormulaire" value="valider">
-                    </div>
-                </div>       
-            </div>
+            <!-- titre du formulaire et 1er popup-->
+            <?php
+                include('../inc/_premierePopupRea.php');
+            ?>
             <div class="titreDuFormulaire">
                 <h3 id="titreFormulaireEntrer"></h3>
-                <!-- question du formulaire-->
+                <!-- question du formulaire avec popup-->
             </div>
-            <div id="overlay2">
-                <div id="formulairePartie2">
-                <input type="button" name="" class="fermerPopup2" value="X">
-                    <h3>écrivez votre question</h3>
-                    <div class="input-group input-group-lg">
-                            <input type="text" name="question" class="form-control" id="question" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" value="" placeholder="Question">
-                            <input type="submit" name="validerQuestion" class="btn btn-primary"  id="validerQuestion" value="valider">
-                    </div>
-                </div>
-            </div>       
-            <!-- question utilisateur-->
+            <?php
+                include('../inc/_poppupQuestion.php');
+            ?>
+            <!-- toutes les question rentrer par l'utilisateur question utilisateur -->
             <div id="toutesQuestion">
-                
-                
+                   
             </div>
             <!--selection des question-->
-            <div id="formulaireSelect1">
-                <select class="form-select" aria-label="Default select example" id="selected" name="selected">
-                    <option selected="selected" >Sélectionner votre question</option>
-                    <option value="1">Quel âge avez vous?</option>
-                    <option value="2">votre sexe?</option>
-                    <option value="3">écrivez votre question réponse oui ou non</option>
-                    <option value="4">valider le formulaire</option>
-                </select>
-            </div>
+          <?php
+                include('../inc/_selection.php');
+            ?>
+            <!-- la partie téléchargement du formulaire -->
             <a href="http://localhost/projet%20stage/projet%202/PHP/rea/realisation.php" class="btn btn-primary" id="terminerFormulaire" download="formulaire créé.pdf">télécharger </a>
         </form>
     </main>
